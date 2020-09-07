@@ -1,13 +1,16 @@
 .container {
   margin: 0 auto;
   padding: 0 30px;
-  max-width: 1920px;
+
+  &.small {
+    max-width: 960px;
+  }
 
   &.medium {
     max-width: 1200px;
   }
 
-  &.small {
-    max-width: 900px;
+  &.large {
+    max-width: 1400px;
   }
 }

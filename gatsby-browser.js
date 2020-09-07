@@ -1,1 +1,1 @@
-import 'typeface-ubuntu';
+require("typeface-poppins");

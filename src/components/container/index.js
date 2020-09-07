@@ -1,7 +1,15 @@
+import { Link } from "gatsby"
 import React from "react"
 
-import './container.scss';
+import styles from './container.module.scss';
 
-const Container = ({size, children}) => <div className={`container${size ? ` ${size}` : ''}`}>{children}</div>
+const Container = ({children, size="medium"}) => {
+  const classes = ['container', styles.container, styles[size]];
+  return (
+    <div className={classes.join(" ")}>
+      {children}
+    </div>
+  )
+}
 
 export default Container

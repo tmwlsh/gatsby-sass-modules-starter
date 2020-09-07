@@ -1,11 +1,11 @@
 import React from "react"
+
+import "../../sass/main.scss";
+
 import Header from "../header"
 import Footer from "../footer"
 
-import '../../sass/main.scss'
-
 const Layout = ({ children }) => {
-
   return (
     <>
       <Header />
@@ -13,7 +13,6 @@ const Layout = ({ children }) => {
       <Footer />
     </>
   )
-
 }
 
 export default Layout
